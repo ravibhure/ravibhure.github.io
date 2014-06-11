@@ -23,6 +23,7 @@ section {
 }
 
 div.sombreado {
+    #border: 1px solid rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(240, 239, 136, 0.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
@@ -66,16 +67,19 @@ h4.text {
 }
 
 .email {
-   margin-left: 11%;
+   margin-left: 8%;
 }
 .github {
-   margin-left: 11%;
+   margin-left: 8%;
 }
 .aboutme {
-   margin-left: 11%;
+   margin-left: 8%;
 }
 .linkedin {
-   margin-left: 11%;
+   margin-left: 8%;
+}
+.stackoverflow {
+   margin-left: 8%;
 }
 
 @media only screen and (min-width: 960px)    {
