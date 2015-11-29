@@ -67,19 +67,22 @@ h4.text {
 }
 
 .email {
-   margin-left: 8%;
+   margin-left: 4%;
 }
 .github {
-   margin-left: 8%;
+   margin-left: 5%;
 }
 .aboutme {
-   margin-left: 8%;
+   margin-left: 5%;
 }
 .linkedin {
-   margin-left: 8%;
+   margin-left: 5%;
 }
 .stackoverflow {
-   margin-left: 8%;
+   margin-left: 5%;
+}
+.resume {
+   margin-left: 5%;
 }
 
 @media only screen and (min-width: 960px)    {
