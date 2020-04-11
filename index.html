@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,16 +27,6 @@
 	<span itemprop="addressRegion">Pune</span>,&nbsp;<span itemprop="addressCountry">India</span>
 </h3>
 <div class="links">
-	<span class="email" itemprop="email">
-		<a href="mailto:ravibhure@gmail.com" title="Contact" itemprop="email">
-		<img src="images/email.png" alt="Contact" itemprop="image">
-		</a>
-	</span>
-	<span class="aboutme" itemprop="follows">
-		<a href="http://about.me/rbhure" title="AboutMe" target="_blank" itemprop="url">
-		<img src="images/me.png" alt="Fotograf&iacute;a" itemprop="url">
-		</a>
-	</span>
 	<span class="linkedin" itemprop="knows">
 		<a href="http://www.linkedin.com/in/ravibhure" title="Curriculum Vitae" target="_blank" itemprop="url">
 		<img src="images/in.png" alt="Curriculum Vitae" itemprop="image">
@@ -56,6 +47,40 @@
 		<img src="images/cv.png" alt="Fotograf&iacute;a" itemprop="url">
 		</a>
 	</span>
+	<span class="email" itemprop="email">
+        <button class="collapsible"><img src="images/email.png"></button>
+        <div class="content">
+            <div id="contact-section">
+                <div class="container"></div>
+                <div class="col-md-8">
+                    <h4>Leave me a message</h4>
+                    <form action="https://formspree.io/ravibhure@gmail.com" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="name" name="Name" placeholder="Name" required="required">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="email" name="Email" id="email" placeholder="Email" required="required">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="Message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div id="success"></div>
+                    <button type="submit" class="btn btn-default">Send Message</button>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+	</span>
 </div>
 <h4 class="text"></h4>
 </div>
@@ -73,6 +98,22 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+</script>
+<script>
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+    for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+            content.style.maxHeight = null;
+    } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+    }
+    });
+  }
 </script>
 </body>
 </html>
